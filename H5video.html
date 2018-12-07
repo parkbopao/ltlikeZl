@@ -5,6 +5,7 @@
     <title>H5多媒体</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts-two/style.css">
 </head>
 <body>
 <figure>
@@ -12,17 +13,34 @@
     <section class="main">
         <video src="source/BigBuck.m4v"></video>
         <!--控制-->
+        <div class="progress">
+            <div class="progress-line"></div>
+            <div class="progress-bar"></div>
+        </div>
         <div class="controls">
-            <a href="javascript:;" class="switch itlike-play3" ></a>
-            <div class="progress">
-                <div class="progress-line"></div>
-                <div class="progress-bar"></div>
-            </div>
-            <div class="time">
-                <span class="current-time">00:00:00</span>/
-                <span class="whole-time">00:00:00</span>
-            </div>
-            <a href="javascript:;" class="fullScreen itlike-enlarge"></a>
+             <div class="controls-one">
+                 <a href="javascript:;" class="switch itlike-play3" ></a>
+                 <a href="javascript:;" class="barrage  icon-pingjia" ></a>
+                 <div class="time">
+                     <span class="current-time">00:00:00</span>/
+                     <span class="whole-time">00:00:00</span>
+                 </div>
+             </div>
+             <div class="controls-two"></div>
+             <div class="controls-three">
+                  <div class="volumeC">
+                      <a href="javascript:;" class="volume  icon-systemprompt_fill"></a>
+                      <div class="voice-box nofocus green">
+                               <p class="voice-value">0%</p>
+                              <div class="voice-control-box">
+                                   <div class="play-icon"></div>
+                                   <div class="voice-btn"></div>
+                                   <div class="voice-bg"></div>
+                              </div>
+                      </div>
+                  </div>
+                 <a href="javascript:;" class="fullScreen itlike-enlarge"></a>
+             </div>
         </div>
     </section>
 </figure>

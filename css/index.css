@@ -45,9 +45,30 @@ video{
     cursor: pointer;
     display: flex;
     align-items: center;
+
+}
+.controls  .controls-one{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls  .controls-one .switch{
+    flex: 1;
+    padding-left: 2.5rem;
+}
+.controls .controls-one .barrage{
+    flex: 1;
+    font-size: 2.8rem;
+    color: #fff;
+}
+.controls .controls-two{
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .switch{
-    flex: 1;
     font-size: 3rem;
     color: #fff;
 }
@@ -76,15 +97,107 @@ video{
     border-radius: 0.3rem;
 }
 .time{
-    flex: 2.5;
+    flex: 4;
     color: #fff;
     font-size: 1.6rem;
 }
 
-.fullScreen{
+.controls-three{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls-three .fullScreen{
+    padding-right: 1rem;
     flex: 1;
     font-size: 2rem;
     color: #fff;
+}
+.controls-three .volumeC .voice-box{
+    flex: 1;
+    position: absolute;
+    bottom: 3.8rem;
+    font-size: 1.4rem;
+    width: 4rem;
+    height: 13rem;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+   display: none;
+}
+.controls-three .volumeC .voice-box .voice-value{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+.controls-three .volumeC .voice-box .voice-control-box{
+    height: 9.4rem;
+     width: 1.3rem;
+    display: inline-block;
+    position: absolute;
+    left: 1.4rem;
+    top:2.6rem;
+    cursor: pointer;
+
+}
+
+
+.controls-three .volumeC .voice-box .voice-control-box .play-icon{
+  /*  height: 35%;*/
+    width: 0.3rem;
+    background-color: #00be06;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+  /*  z-index: 5;*/
+    border-radius: 0.2rem;
+}
+.controls-three .volumeC .voice-box .voice-control-box .voice-bg{
+  background-color: rgba(255,255,255,0.2);
+    height: 9.4rem;
+    width: 0.3rem;
+/*    background-color: #828282;
+      因为设置了z-index，所以让我在后面的js操作中深陷大坑！！！！！！！谨记勿忘
+*/
+    position: absolute;
+    left: 0.5rem;
+    border-radius: 0.2rem;
+}
+.controls-three .volumeC .voice-box .voice-control-box .voice-btn{
+    background-color: #fff;
+    width: 1.3rem;
+    height: 1rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+.controls-three .volumeC .volume{
+    font-size: 3.5rem;
+    color: #fff;
+}
+.volumeC .volume:hover{
+    color: #00be06;
+}
+.volumeC:hover .voice-box{
+    display: block !important;
+}
+.voice-box:hover{
+      display: block !important;
+  }
+.voice-box:focus{
+    display: block !important;
+}
+
+.controls-three .volumeC{
+    position: relative;
+    height: 4.4rem;
+     display: flex;
+    align-items: center;
+
 }
 video::-webkit-media-controls{
     display: none;
